@@ -40,4 +40,4 @@ python solver_runner.py \
   --inter-batch-comparison \
   --no-save \
   --no-restore \
-  --data-path /srv/storage/datasets/gabrielsluz/MMNIST/mmnist_images/
+  --data-path /datasets/MMNIST/mmnist_images/
