@@ -25,12 +25,6 @@ KINETICS_400_CLASS_NAMES = [
     )
 ]
 
-YT8M_CLASS_NAMES = [
-    line.strip()
-    for line in open(
-        os.path.join(os.path.dirname(__file__), os.pardir, "datasets", "info_files", "yt8m_class_names.txt")
-    )
-]
 
 
 def to_uint8(images, padding=0):
