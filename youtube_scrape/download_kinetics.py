@@ -35,8 +35,8 @@ def _read_csv(csv_file):
 def download_youtube_video(args):
     row, subset_name = args
     video_id = row["youtube_id"]
-    time_start = int(row["time_start"])
-    time_end = int(row["time_end"])
+    time_start = int(float(row["time_start"]))
+    time_end = int(float(row["time_end"]))
     video_path = youtube_utils.download_video(video_id, "/tmp/ytdl/")
     if not video_path:
         print("Failed_to_download", video_id)
@@ -85,7 +85,6 @@ def download_youtube_videos(data_dict_rows, subset_name):
     print("new len", len(data_dict_rows))
     video_args = list(zip(data_dict_rows, [subset_name] * len(data_dict_rows)))
     random.shuffle(video_args)
-    print(video_args, len(video_args))
     list(tqdm.tqdm(pool.imap(download_youtube_video, video_args), total=len(video_args)))
 
 
