@@ -85,6 +85,7 @@ def download_youtube_videos(data_dict_rows, subset_name):
     print("new len", len(data_dict_rows))
     video_args = list(zip(data_dict_rows, [subset_name] * len(data_dict_rows)))
     random.shuffle(video_args)
+    print(video_args, len(video_args))
     list(tqdm.tqdm(pool.imap(download_youtube_video, video_args), total=len(video_args)))
 
 
