@@ -9,7 +9,7 @@ LOG_LOCATION=${BASE_LOG_LOCATION}"/"${TITLE}
 mkdir -p ${LOG_LOCATION}
 cp "$(readlink -f $0)" ${LOG_LOCATION}
 
-python solver_runner.py \
+python3 solver_runner.py \
   --title ${TITLE} \
   --base-logdir ${BASE_LOG_LOCATION} \
   --description r18-b-64-q-16384 \
