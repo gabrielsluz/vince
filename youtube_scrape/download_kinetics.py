@@ -89,7 +89,8 @@ def download_youtube_videos(data_dict_rows, subset_name):
 
 
 def main():
-    for subset_name in ['train', 'validate', 'test']:
+    #for subset_name in ['train', 'validate', 'test']:
+    for subset_name in ['validate']:
         print("subset", subset_name)
         keys, all_rows = _read_csv(os.path.join(annotation_folder, subset_name + ".csv"))
         os.makedirs(os.path.join(image_folder, subset_name), exist_ok=True)
