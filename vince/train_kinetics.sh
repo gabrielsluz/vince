@@ -15,7 +15,7 @@ python3 solver_runner.py \
   --description r18-b-64-q-16384 \
   --solver VinceSolver \
   --backbone ResNet18 \
-  --dataset Kinetics400Dataset \
+  --dataset R2V2Dataset \
   --transform StandardVideoTransform \
   --num-workers 40 \
   --pytorch-gpu-ids 0 \
