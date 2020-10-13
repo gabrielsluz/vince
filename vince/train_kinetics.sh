@@ -40,4 +40,4 @@ python3 solver_runner.py \
   --inter-batch-comparison \
   --no-save \
   --no-restore \
-  --data-path /datasets/Kinetics/kinetics400/
+  --data-path /datasets/Kinetics/kinetics400/images/10fps/
