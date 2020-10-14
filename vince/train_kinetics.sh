@@ -23,7 +23,7 @@ python3 solver_runner.py \
   --batch-size 8 \
   --base-lr 0.03 \
   --vince-embedding-size 64 \
-  --vince-queue-size 8192 \
+  --vince-queue-size 1024 \
   --vince-momentum 0.999 \
   --vince-temperature 0.07 \
   --epochs 1 \
