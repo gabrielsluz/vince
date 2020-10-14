@@ -20,10 +20,10 @@ python3 solver_runner.py \
   --num-workers 20 \
   --pytorch-gpu-ids 0 \
   --feature-extractor-gpu-ids 0 \
-  --batch-size 8 \
+  --batch-size 256 \
   --base-lr 0.03 \
   --vince-embedding-size 64 \
-  --vince-queue-size 8 \
+  --vince-queue-size 8132 \
   --vince-momentum 0.999 \
   --vince-temperature 0.07 \
   --epochs 1 \
