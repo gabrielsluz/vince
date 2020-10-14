@@ -17,10 +17,10 @@ python3 solver_runner.py \
   --backbone ResNet18 \
   --dataset R2V2Dataset \
   --transform StandardVideoTransform \
-  --num-workers 1 \
+  --num-workers 40 \
   --pytorch-gpu-ids 0 \
   --feature-extractor-gpu-ids 0 \
-  --batch-size 16 \
+  --batch-size 8 \
   --base-lr 0.03 \
   --vince-embedding-size 64 \
   --vince-queue-size 8192 \
