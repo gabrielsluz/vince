@@ -17,7 +17,7 @@ python3 solver_runner.py \
   --backbone ResNet18 \
   --dataset R2V2Dataset \
   --transform StandardVideoTransform \
-  --num-workers 10 \
+  --num-workers 40 \
   --pytorch-gpu-ids 0 \
   --feature-extractor-gpu-ids 0 \
   --batch-size 8 \
